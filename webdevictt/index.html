@@ -15,11 +15,7 @@
         </h3>
 
         <ul class="first-nav-item">
-<<<<<<< HEAD
           <li><a href="">Nav</a></li>
-=======
-          <li><a href="">Home </a></li>
->>>>>>> 495b80a36a40c2585cc9a67addeb29bb3a280aba
           <li><a href="">About Us</a></li>
           <li><a href="">Contact Us</a></li>
         </ul>
@@ -55,7 +51,7 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
+            gap: 0px;
           "
         >
           <h4
@@ -119,7 +115,9 @@
           <aside style="margin: 0 auto; width: 100%">
             <div class="features-text-container">
               <h3>Simplify Your Voting with <span>Our Features</span></h3>
-              <p>
+              <p style="@media (max-width:768px) {
+                 font-size: 14px;
+              }">
                 Our app makes voting easy, secure, and engaging. Discover the
                 features that empower your voice and simplify every step of the
                 process.
@@ -131,7 +129,7 @@
                   <span
                     style="
                       color: rgba(0, 0, 255, 1);
-                      width: 144px;
+                      width:fit-content;
                       font-size: 1rem;
                       font-weight: 100;
                       background-color: rgba(230, 230, 255, 1);
@@ -140,6 +138,7 @@
                       border-radius: 6px;
                       text-align: center;
                       margin: 0;
+
                     "
                   >
                     BellsVote Features
@@ -173,7 +172,7 @@
                     </p>
                   </div>
 
-                  <a href="">Learn More </a>
+                  <a href="" style="color: blue;">Learn More </a>
                 </div>
                 <div
                   class="security-image-container"
@@ -187,7 +186,7 @@
                   <span
                     style="
                       color: rgba(0, 0, 255, 1);
-                      width: 144px;
+                      width: fit-content;
                       font-size: 1rem;
                       font-weight: 100;
                       background-color: rgba(230, 230, 255, 1);
@@ -228,7 +227,7 @@
                     </p>
                   </div>
 
-                  <a href="">Learn More </a>
+                  <a href="" style="color: blue;">Learn More </a>
                 </div>
               </li>
 
@@ -237,7 +236,7 @@
                   <span
                     style="
                       color: rgba(0, 0, 255, 1);
-                      width: 144px;
+                      width: fit-content;
                       font-size: 1rem;
                       font-weight: 100;
                       background-color: rgba(230, 230, 255, 1);
@@ -278,7 +277,7 @@
                     </p>
                   </div>
 
-                  <a href="">Learn More </a>
+                  <a href="" style="color: blue;">Learn More </a>
                 </div>
               </li>
             </ul>
@@ -298,15 +297,23 @@
             <li class="rounded-spam"><span>2</span></li>
             <li class="rounded-spam"><span>3</span></li>
             <li>
-              <h4>Select a poll</h4>
+              <h4 style=" @media(max-width:768px){
+                text-align: center;
+              background: none;}
+              ">Select a poll</h4>
               <p>Browse and choose an active poll to participate in.</p>
             </li>
             <li>
-              <h4>Choose a candidate</h4>
+              <h4 style="@media(max-width:768px){
+                text-align: center;
+              background: none;}
+              ">Choose a candidate</h4>
               <p>Review the candidates and select your preferred option.</p>
             </li>
             <li>
-              <h4>Submit your vote</h4>
+              <h4 style="@media(max-width:768px){
+                text-align: center;
+              background: none;}">Submit your vote</h4>
               <p>Confirm your choice and make your voice count.</p>
             </li>
           </ul>
@@ -377,7 +384,7 @@
             style="
               background-color: rgba(0, 0, 255, 1);
 
-              width: 144px;
+              width: fit-content;
               font-size: 1rem;
               font-weight: 100;
               color: rgba(230, 230, 255, 1);
@@ -393,7 +400,7 @@
           <span
             style="
               color: rgba(0, 0, 255, 1);
-              width: 144px;
+              width: fit-content;
               font-size: 1rem;
               font-weight: 100;
               background-color: rgba(230, 230, 255, 1);
