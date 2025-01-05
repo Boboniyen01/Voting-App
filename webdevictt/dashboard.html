@@ -10,6 +10,7 @@
     <header>
         <nav>
             <ul>
+                <img src="images/Frame.svg" alt="" class="menu">
                 <li style="font-size: 36px; font-family: Satoshi-bold;">
                     BellsVote
                 </li>
@@ -28,12 +29,18 @@
                     <p>Dashboard</p>
                 </div>
                 <div class="menu-card">
-                    <img src="images/main-icons/judge.svg" alt="">
-                    <p>Voter's Regulation</p>
+                        <img src="images/main-icons/judge.svg" alt="">
+                        <a href="regulations.html" style="color: grey;">
+                        <p>Voter's Regulation</p>
+                    </a>
+              
                 </div>
                 <div class="menu-card">
                     <img src="images/main-icons/reload.svg" alt="">
-                    <p>Voter's History</p>
+                    <a href="history.html" style="color: grey;">
+                        <p>Voter's History</p>
+                    </a>
+              
                 </div>
                 <div class="menu-card">
                     <img src="images/Group 21.svg" alt="">
@@ -51,7 +58,9 @@
             <section class="welcome">
                 <div class="left-section">
                     <div class="welcome-text" style="display: flex; align-items: center;">
-                        <h2 style="font-size: 40px; font-family: Satoshi-regular;">Welcome, <span style="font-family: Satoshi-black;"> AbdulHakeem</span></h2>
+                        <h2 style="font-size: 40px; font-family: Satoshi-regular; @media (max-width:768px) {
+                            font-size: 32px;
+                        }">Welcome, <span style="font-family: Satoshi-black;"> AbdulHakeem</span></h2>
                         <img src="images/hand waving.png" alt="" width="50px" height="50px">
                     </div>
                     <p>Check out the ongoing elections or review the upcoming ones to stay ahead.</p>
@@ -85,7 +94,55 @@
                     <h2 style="font-size: 40px;">4</h2>
                 </div>
             </section>
+            <section class="polls">
+                <div class="register-text">
+                    <h3>Registered Polls</h3>
+                    <p style="color: blue;">See all</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/buesa_logo-removebg-preview.png" alt="Buesa Logo" height="89px" width="89px">
+                        <div class="card-headings">
+                            <p>Bells University Engineering Students Association</p>
+                            <span style="font-size: 14px; background-color: #FFF0F0; padding: 4px 8px; border-radius: 20px;color: red;">Closed</span>
+                        </div>
+                        <p style="font-size: 14; color: red;">Voting ended</p>
+                        <div class="card-bottoms">
+                            <img src="images/people.png" alt="" width="136px" height="40px">
+                            <p>150+ <span style="color: grey;">participants</span></p>
+                        </div>  
+                        <button id="inactive">Place Your Vote</button> 
+                    </div>
+                    <div class="card">
+                        <img src="images/nacos-removebg-preview.png" alt="Buesa Logo" height="89px" width="89px">
+                        <div class="card-headings">
+                            <p>Nigerian Association of Computing Students</p>
+                            <span style="font-size: 14px; background-color: hsl(120, 100%, 97%); padding: 4px 8px; border-radius: 20px;color: green;">Open</span>
+                        </div>
+                        <p style="font-size: 14; color: red;">Voting ends in 5hrs</p>
+                        <div class="card-bottoms">
+                            <img src="images/people.png" alt="" width="136px" height="40px">
+                            <p>150+ <span style="color: grey;">participants</span></p>
+                        </div>  
+                        <button>Place Your Vote</button> 
+                    </div>
+                    <div class="card">
+                        <img src="images/busa_logo-removebg-preview.png" alt="Buesa Logo" height="89px" width="89px">
+                        <div class="card-headings">
+                            <p>Bells University Students Association</p>
+                            <span style="font-size: 14px; background-color:hsl(60, 100%, 97%); padding: 4px 8px; border-radius: 20px;color: rgb(171, 171, 1);">Upcoming</span>
+                        </div>
+                        <p style="font-size: 14; color: red;">Voting starts in 2 days</p>
+                        <div class="card-bottoms">
+                            <img src="images/people.png" alt="" width="136px" height="40px">
+                            <p>150+ <span style="color: grey;">participants</span></p>
+                        </div>  
+                        <button id="inactive">Place Your Vote</button> 
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
+    <script src="dashboard.js" type="module"></script>
 </body>
 </html>
