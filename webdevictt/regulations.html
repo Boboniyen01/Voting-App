@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="images/Frame.svg" alt="" class="menu">
+                <li style="font-size: 36px; font-family: Satoshi-bold;">
+                    BellsVote
+                </li>
+                <div class="avatar">
+                    <img src="images/Avatar/Image-60.png" alt="" height="60px" width="60px">
+                    <p>2022/11365</p>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="side-bar">
+            <div class="main-nav">
+                <div class="menu-card">
+                    <img src="images/active home.svg" alt="">
+                    <a href="dashboard.html" style="color: grey;">
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+                <div id="active">
+                    <img src="images/regulationsactive.svg" alt="">
+                    <p>Voter's Regulation</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/main-icons/reload.svg" alt="">
+                    <a href="history.html" style="color: grey;">
+                        <p>Voter's History</p>
+                    </a>
+              
+                </div>
+                <div class="menu-card">
+                    <img src="images/Group 21.svg" alt="">
+                    <p>Support</p>
+                </div>
+            </div>
+            <div class="logout-nav">
+                <div id="logout">
+                    <img src="images/main-icons/Frame.svg" alt="">
+                    <a href="login.html" style="color: red;"> <p>Logout</p></a>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <section class="welcome">
+                <div class="left-section">
+                    <div class="welcome-text" style="display: flex; align-items: center;">
+                        <h2 style="font-size: 40px; font-family: Satoshi-regular;@media (max-width:768px) {
+                            font-size: 32px;}">Welcome to <span style="font-family: Satoshi-black;">Voter's Regulation</span></h2>
+                        <img src="images/🦆 emoji _orange book_.svg" alt="" width="50px" height="50px">
+                    </div>
+                    <p>Below are the rules and regulations for voting on this platform.</p>
+                        <p style="font-family: Satoshi-regular;">
+                           <span style="font-family: Satoshi-black;">Quick Tip: </span>Take your time to read the rules before voting.
+                        </p>
+                </div>
+            </section>
+            <div class="rules">
+
+            </div>
+        </section>
+    </main>
+    <script type="module" src="rules.js"></script>
+    <script src="dashboard.js" type="module"></script>
+</body>
+</html>

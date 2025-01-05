@@ -21,7 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     @media(max-width:768px){
-        font-size: px;
+        font-size: 14px;
     }
 }
 ul{
@@ -49,10 +49,22 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: sticky;
     @media (max-width:768px) {
         width: 50%;
-        display: none;
+        position: fixed;
+        transition: .3s ease-in-out;
+        left:-60%;
     }
+}
+.side-bar.active{
+    @media(max-width:768px){
+     left: 0;
+     background-color: white;
+     transition: .3s ease-in-out;
+     box-shadow: 3px 0px 50px 2px rgba(0,0,0,0.2) ;
+    }
+    box-shadow: none ;
 }
 .menu-card{
     display: flex;
@@ -94,6 +106,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 80vh;
+    overflow: scroll;
     @media(max-width:768px){
         width: calc(100% - 20px);
     }
@@ -151,4 +165,69 @@ main{
 }
 a{
     text-decoration: none;
+}
+.register-text{
+    display: flex;
+    justify-content: space-between;
+}
+.card-headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-bottoms{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:10px;
+    @media(max-width:768px){
+        grid-template-columns: auto;
+    }
+}
+button{
+    border: none;
+    font-family: Satoshi;
+    width: 100%;
+    padding: 16px 0px;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+}
+.card{
+    padding: 16px 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(0, 0, 78);
+    transition: .3s ease-in-out;
+}
+#inactive{
+    background-color: rgba(0,0,255,0.3);
+}
+.menu{
+    display: none;
+    @media(max-width:768px){
+        display: block;
+    }
+}
+.rules{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    @media(max-width:768px){
+        grid-template-columns: auto auto;
+    }
+}
+.rule{
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
 }
