@@ -1,4 +1,4 @@
-import {array} from "./rules.js"
+import {array} from "./rule.js"
 document.addEventListener("DOMContentLoaded", ()=>{
     const rules= document.getElementsByClassName('rules')
     console.log(rules)
