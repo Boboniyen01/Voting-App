@@ -1,181 +1,177 @@
 @font-face {
-    font-family: 'Satoshi-Medium';
-    src: url(fonts/Satoshi-Medium.otf)
-    format('truetype');
-}
-body{
-    margin: 0px;
-    width: 100%;
-    display: flex;
-    font-family: "Satoshi",sans-serif;
-    @media(max-width:760px){
-        font-size: 12px;
-    }
+  font-family: "Satoshi-Medium";
+  src: url(fonts/Satoshi-Medium.otf) format("truetype");
 }
 
- .swiper{
-      width: 50%;
-      height: 100vh;
-      @media(max-width:760px){
-        display: none;
-    }
+body {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  font-family: "Satoshi-Medium";
+  @media (max-width: 760px) {
+    font-size: 12px;
+  }
 }
 
-.swiper-slide{
-    width:100%;
-    display: flex;
-    overflow: hidden;
+.swiper {
+  width: 50%;
+  height: 100vh;
+  @media (max-width: 760px) {
+    display: none;
+  }
 }
-.swiper-slide img{
-    display: block;
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-2 {
+  width: 50%;
+  height: 100vh;
+  background: url(assets/Background.png);
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  animation: appear 800ms ease-in-out 0s 1;
+  @media (max-width: 760px) {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+  }
 }
-.section-2{
-    width: 50%;
-    height: 100vh;
-    background: url(assets/Background.png);
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    animation: appear 800ms ease-in-out 0s 1;
-    @media(max-width:760px){
-        width: 100%;
-    }
-}
-.main-text{
+.main-text {
+  font-size: 3em;
+  font-weight: bold;
+  width: 80%;
+  @media (max-width: 760px) {
     font-size: 3em;
-    font-weight: bold;
-    width: 80%;
-    @media(max-width:760px){
-        font-size: 3em;;
-    }
+  }
 }
-.supporting-text{
+.supporting-text {
+  font-size: 1.25em;
+  line-height: 175%;
+  width: 80%;
+  color: grey;
+  @media (max-width: 760px) {
     font-size: 1.25em;
-    line-height: 175%;
-    width: 80%;
-    color: grey;
-    @media(max-width:760px){
-      font-size: 1.25em;
-      width: 100%;
-    }
+    width: 100%;
+  }
 }
-.input-field{
-    padding: 12px 12px;
-    font-size: 16px;
-    border: 2px solid #D3D2D2;
-    border-radius: 6px;
-    display: flex;
-    gap: 20px;
-    @media(max-width:760px){
-        font-size: 12px;
-    }
+.input-field {
+  padding: 12px 12px;
+  font-size: 16px;
+  border: 2px solid #d3d2d2;
+  border-radius: 6px;
+  display: flex;
+  gap: 20px;
+  @media (max-width: 760px) {
+    font-size: 12px;
+  }
 }
-label{
+label {
+  font-size: 1em;
+}
+input {
+  border: none;
+  font-size: 1.25em;
+  width: 100%;
+  font-family: "Satoshi", sans-serif;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+.input-field:focus-within {
+  border: 2px solid blue;
+  transition: all 0.5 ease-in-out;
+}
+.main-input:focus-within label {
+  color: blue;
+}
+.main-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 12px;
+  @media (max-width: 760px) {
+    width: 100%;
+  }
+}
+button {
+  padding: 16px 12px;
+  width: 80%;
+  background: blue;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.25em;
+  font-family: "Satoshi", sans-serif;
+  @media (max-width: 760px) {
+    width: 100%;
+  }
+}
+button:focus-within {
+  transition: all 300ms ease-in-out;
+}
+a {
+  font-size: 20px;
+  color: blue;
+  text-decoration: none;
+  @media (max-width: 760px) {
     font-size: 1em;
+  }
 }
-input{
-    border: none;
-    font-size: 1.25em;
+.last-text {
+  font-size: 20px;
+  width: 80%;
+  text-align: center;
+  align-self: center;
+  @media (max-width: 760px) {
+    font-size: 1em;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  @media (max-width: 760px) {
+    gap: 16px;
+  }
+}
+.btn-input {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 760px) {
     width: 100%;
-    font-family: "Satoshi", sans-serif;
+    display: block;
+  }
 }
-input:focus{
-    border: none;
-    outline: none;
+@keyframes appear {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.input-field:focus-within{
-    border: 2px solid blue;
-    transition: all .5 ease-in-out;
-}
-.main-input:focus-within label{
-color: blue;
-}
-.main-input{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 4px;
-}
-.inputs{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 12px;
-    @media(max-width:760px){
-        width: 100%;
-    }
-}
-button{
-    padding: 16px 12px;
-    width: 80%;
-    background: blue;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    font-size: 1.25em;
-    font-family: "Satoshi", sans-serif;
-    @media(max-width:760px){
-        width: 100%;
-    }
-}
-button:focus-within{
-    transition: all 300ms ease-in-out ;
-}
-a{
-    font-size: 20px;
-    color: blue;
-    text-decoration: none;
-    @media(max-width:760px){
-        font-size: 1em;
-    }
-}
-.last-text{
-    font-size: 20px;
-    width: 80%;
-    text-align: center;
-    align-self: center;
-    @media(max-width:760px){
-        font-size: 1em;
-    }
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap:20px;
-    @media(max-width:760px){
-        gap:16px;
-    }
-}
-.btn-input{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-}
-.texts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @media(max-width:760px){
-        width: 100%;
-        display: block;
-    }
-}
-@keyframes appear{
-    0%{
-        opacity: 0.1;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-
-
-
