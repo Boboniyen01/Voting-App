@@ -31,10 +31,10 @@ export const array=[
      
 ]
 const targetDate = new Date("June 10, 2025 12:00:00").getTime();
-const days= document.getElementsByClassName("days")
-const hours= document.getElementsByClassName("hours")
-const minutes= document.getElementsByClassName("minutes")
-const seconds=document.getElementsByClassName("seconds")
+const days= document.querySelector(".days")
+const hours= document.querySelector(".hours")
+const minutes= document.querySelector(".minutes")
+const seconds=document.querySelector(".seconds")
 
         function updateTimer() {
             const now = new Date().getTime();
@@ -44,5 +44,6 @@ const seconds=document.getElementsByClassName("seconds")
             minutes.textContent = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
          seconds.textContent = Math.floor((timeDifference % (1000 * 60)) / 1000);
         }
-        const timerInterval = setInterval(updateTimer(), 1000);
+        setInterval(() => { (updateTimer(), 1000)})
+        setInterval()
         updateTimer();
